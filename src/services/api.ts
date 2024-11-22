@@ -15,16 +15,16 @@ const api = createApi({
     getSoon: builder.query<Game[], void>({
       query: () => 'em-breve'
     }),
-    getAcaoGames: builder.query<Game[], void>({
+    getActionGames: builder.query<Game[], void>({
       query: () => 'acao'
     }),
-    getEsporteGames: builder.query<Game[], void>({
+    getSportGames: builder.query<Game[], void>({
       query: () => 'esportes'
     }),
-    getSimulacaoGames: builder.query<Game[], void>({
+    getSimulationGames: builder.query<Game[], void>({
       query: () => 'simulacao'
     }),
-    getLutaGames: builder.query<Game[], void>({
+    getFightGames: builder.query<Game[], void>({
       query: () => 'luta'
     }),
     getRpgGames: builder.query<Game[], void>({
@@ -38,12 +38,12 @@ const api = createApi({
 
 export const {
   useGetFeaturedGameQuery,
-  useGetOnSaleQuery,
   useGetSoonQuery,
-  useGetAcaoGamesQuery,
-  useGetEsporteGamesQuery,
-  useGetSimulacaoGamesQuery,
-  useGetLutaGamesQuery,
+  useGetOnSaleQuery,
+  useGetActionGamesQuery,
+  useGetSportGamesQuery,
+  useGetSimulationGamesQuery,
+  useGetFightGamesQuery,
   useGetRpgGamesQuery,
   useGetGameQuery
 } = api
