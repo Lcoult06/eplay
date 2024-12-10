@@ -4,9 +4,6 @@ import Section from '../../components/Section'
 
 import Gallery from '../../components/Gallery'
 
-import residentEvil from '../../assets/images/resident.png'
-import { useEffect, useState } from 'react'
-import { Game } from '../Home'
 import { useGetGameQuery } from '../../services/api'
 
 const Product = () => {
