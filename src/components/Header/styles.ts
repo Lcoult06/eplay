@@ -42,3 +42,16 @@ export const CartButton = styled.a`
     margin-left: 16px;
   }
 `
+export const Hamburguer = styled.div`
+  width: 32px;
+  span {
+    height: 2px;
+    display: block;
+    width: 100%;
+    background-color: ${cores.branca};
+    margin-bottom: 4px;
+  }
+  @media (min-width: ${breakpoints.tablet}) {
+    display: none;
+  }
+`
