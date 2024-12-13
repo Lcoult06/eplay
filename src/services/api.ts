@@ -25,11 +25,11 @@ type PurchasePayload = {
       }
       name?: string
       number?: string
-      expires: {
+      expires?: {
         month: number
         year: number
       }
-      code: number
+      code?: number
     }
     installments: number
   }

@@ -40,11 +40,23 @@ const Home = () => {
     return (
       <>
         <Banner />
-        <ProductsList games={onSaleGames} title="Promoções" background="gray" />
-        <ProductsList games={soonGames} title="Em breve" background="black" />
+        <ProductsList
+          games={onSaleGames}
+          title="Promoções"
+          background="gray"
+          id="on-sale"
+        />
+        <ProductsList
+          games={soonGames}
+          title="Em breve"
+          background="black"
+          id="coming-soon"
+        />
       </>
     )
   }
+
+  return <h4>Carregando</h4>
 }
 
 export default Home
